@@ -1,0 +1,137 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+ 
+  body > *  {
+    margin: auto;
+  }  
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    background:#0c6688;
+    padding: 24px;
+    text-align: left;
+   text-indent : 18%;
+
+
+}
+
+header nav a.active,
+header nav a{
+    padding:10px 25px;
+    color: azure;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+header nav a:hover{
+    background: azure;
+    color: rgb(49, 49, 87);
+
+}
+
+@media (max-width: 1370px) { 
+    header nav a.active,
+    header nav a {
+        
+        margin:2000px
+        } }
+
+
+section{
+
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(233, 239, 240, 0.925);
+    font-weight: bolder;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section:nth-child(odd){
+    background:azure;
+
+}
+
+@media (max-width: 1000px) {
+    
+    section{
+       
+        min-height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background:rgba(233, 239, 240, 0.925);
+        font-weight: bolder;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    }
+
+
+/* scroll-behavior: auto; */
+
+
+.I1 {
+    width : 10px;
+    height : 15px;
+    }
+
+
+/* code table */
+table {
+    width: 43%;
+    margin: 0;
+    text-align: left;
+    background:#d2e6f5;
+    color:#12165f;
+    border-radius: 40px;
+
+    
+}
+
+/* @media (max-width: 1000px) {
+    
+    table{
+        width: 20%;
+        text-align: center;
+        background: hsl(232, 22%, 90%);
+        color: rgb(57, 57, 109);
+        border-radius: 40px;
+        
+
+    }
+} */
+
+
+th, td {
+    padding: 20px;
+  }
+ 
+  @media (max-width: 1000px) {
+    
+    th{
+        text-align: right;
+    
+    }
+}
+
+h4{
+    margin-left: 40px;
+
+}
+
+/* Cacher la case à cocher native */
+
