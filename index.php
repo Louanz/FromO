@@ -47,12 +47,6 @@
     }
   }
 
-input[type="checkbox"] {
-
-}
-
-
-    
     </style>
 
     </head>
@@ -107,6 +101,7 @@ input[type="checkbox"] {
     <th> <p> L3 </p> </th>
 
     
+    <div class="ch">
 
   </th>
     </tr>
@@ -585,7 +580,7 @@ input[type="checkbox"] {
 
 </thead>
 </table>
-
+</div>
 
 
 
