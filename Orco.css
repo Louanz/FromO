@@ -21,11 +21,18 @@ header{
     z-index: 1000;
     background:#0c6688;
     padding: 20px;
-    /* text-align: left;
-   text-indent : 18%; */
-
+    text-align: left;
+    text-indent :100px;
 
 }
+
+@media (max-width: 1370px) { 
+
+    header {
+       line-height: 40px;
+       text-align: right;
+        } }
+
 
 header nav a.active,
 header nav a{
@@ -40,12 +47,14 @@ header nav a:hover{
 
 }
 
-@media (max-width: 1370px) { 
+/* @media (max-width: 1370px) { 
     header nav a.active,
     header nav a {
         
-        margin:200px
-        } }
+
+  
+
+        } } */
 
 
 section{

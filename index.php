@@ -10,28 +10,30 @@
         <style>
     .test {
       text-align: center;
-        background:#0c6688;
+        background:white;
         position: fixed;
         display: block;
         width: 300px;
         padding: 80px;
-        border: none;
         top: 50%;
         left: 87%;
         transform: translate(-50%, -50%);
         color:white;
-        border-radius: 30px;
-        box-shadow: 13px 6px 6px #27011E;
+        border-radius: 40px;
+        box-shadow:
+        -webkit-box-shadow:0px 0px 45px 6px rgba(12,103,136,0.87);
+-moz-box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
+box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
+        color:#12165f;
     }
 
     @media (max-width: 1060px) {
       .test {
         text-align: center;
-    left: 70%;
-    width: 200px;
-    top: 80%;
-
-
+        font-size: 18px;
+    left: 80%;
+    top: 90%;
+    padding: 47px;
   }
     }
 
@@ -39,13 +41,13 @@
     float: left;
     height: 64px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1370px) {
     img {
-      float: left;
-      height: 50px;
-      
+           height: 55px;
+
     }
   }
+
 
     </style>
 
@@ -55,8 +57,9 @@
     <form method="post" action="Oroc.php">
 
     <header>
+      
+<div class="aaa"> <img src="logo.png"> </div>
 
-<img src="logo.png"/> 
 <nav> 
   <a class="active" href="#LSEO">License SEO</a>  
   <a href="#LS">License Sécurité</a>
