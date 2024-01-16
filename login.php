@@ -7,4 +7,4 @@
     </head>
     <body>
 
-<p>tu pues</p>
+<p> Game over </p>

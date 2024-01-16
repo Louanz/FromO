@@ -58,12 +58,12 @@
 
 <img src="logo.png"/> 
 <nav> 
-  <a class="active" href="#LSEO">LSEO</a>  
-  <a href="#LS">LS</a>
-  <a href="#Heb">Heb</a>
-  <a href="#MJS">MJS</a>
-  <a href="#Intrg">Integrateurs</a>
-  <a href="#Webmaster">Webmaster</a>
+  <a class="active" href="#LSEO">License SEO</a>  
+  <a href="#LS">License Sécurité</a>
+  <a href="#Heb">Hébergement</a>
+  <a href="#MJS">Module sur mesure</a>
+  <a href="#Intrg">Integrateurs/réparation</a>
+  <a href="#Webmaster">Webmaster/Assistance </a>
   <a href="#choix">Choix</a>
 
 
@@ -359,7 +359,6 @@
 
 
 
-</section>
 <section id="MJS">
 
 
@@ -398,14 +397,13 @@
     </thead>
 </section>
 
-</section>
 <section id="Intrg">
 
 <table>
 
   <thead>
     <tr>
-      <th>Integarteur </th>
+      <th>Integarteur / réparation respective </th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
@@ -795,8 +793,11 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
 
 </script>
 
+
+
 <section id="choix">
  <?php
+ 
 
 $bdd = new PDO("mysql:host=localhost;dbname=formoro","formoro","17yp~I26u");
 
