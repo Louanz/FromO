@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"type='text/css' media='all' href=".css" />
-    <script type="text/javascript" src="Affichage.js"></script>
-
-    <title>Pack</title>
+    <link rel="stylesheet" type='text/css' media='all' href=".css">
+    <title>Orcocom</title>
+    <script type="text/javascript">
+        function redirect() {
+            window.location.href = "index.php";
+        }
+    </script>
 </head>
+
 <body>
-    <?php
-    $servername = "localhost";
-    $username = "formoro";
-    $password = "17yp~I26u";
-    $dbname = "formoro";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+<?php
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+$roles = array(
+    "user" => "UupsadOr1",
+    "admin" => "AapsadOr2"
+);
 
-    $role = $_POST['role'];
-    $password = $_POST['password'];
-    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+if (isset($_POST["role"]) && isset($_POST["password"])) {
+    $role = $_POST["role"];
+    $password = $_POST["password"];
 
-    $stmt = $conn->prepare("SELECT * FROM roles WHERE role = ? AND password = ?");
-    $stmt->bind_param("ss", $role, $password);
-    $stmt->execute();
-
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        session_start();
-        $_SESSION['role'] = $role;
-        header('Location: dashboard.php');
+    if ($roles[$role] === $password) {
+        header("Location: Wfrom.php");
+        exit();
     } else {
-        echo "Invalid role or password";
+        echo "<script>alert('Erreur mot de passe'); redirect();</script>";
+        exit;
+    
     }
+    
+}
+?>
 
-    $stmt->close();
-    $conn->close();
-    ?>
 </body>
 </html>

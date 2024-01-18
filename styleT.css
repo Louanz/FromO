@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:#0c6688;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  section {
+    width: 370px;
+    background-color: azure;
+    height: 390px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    color: #0c6688;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+  
+  label {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #0c6688;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+
+  }
+  select#role {
+    width: 185px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-family:serif;
+    color: #0c6688;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+  
+  input[type="password"] {
+    margin-bottom: 10px;
+    width: 180px;
+    height: 20px;
+    border-radius: 10px;
+    color: #0c6688;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+  
+  input[type="submit"] {
+   
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    color: #0c6688;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 15px;
+
+
+    
+  }
+
+  H1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right,  #08074d, #000982, #1e3cc2, #2f00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+
+  }
+
+  img{
+    width : 70px;
+height : 70px;
+margin-top:-75px;
+margin-right:270px;
+
+
+  }
