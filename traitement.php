@@ -29,7 +29,7 @@ if (isset($_POST["role"]) && isset($_POST["password"])) {
         header("Location: Wfrom.php");
         exit();
     } else {
-        echo "<script>alert('Erreur mot de passe'); redirect();</script>";
+        echo "<script>alert('Erreur: mot de passe'); redirect();</script>";
         exit;
     
     }

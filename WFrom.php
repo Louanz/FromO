@@ -48,6 +48,29 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     }
   }
 
+ 
+  .tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 210px;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip.active::after {
+  opacity: 1;
+}
 
     </style>
 
@@ -116,60 +139,77 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
       <td>
 
       <div>
-  
-                    <h4> <input type="checkbox" id="checkbox"  class="save-checkbox" value="Robots, sitmaps, flux Rss ">
-                    <label for="checkbox"> Robots, sitmaps, flux Rss </label>
-                    <p id="text" style="display: none;"> Explication ici </p> </h4>
+
+      <h4>
+    <input type="checkbox" id="checkbox1" class="save-checkbox" value="Robots, sitmaps, flux Rss" />
+    <label for="checkbox1">Robots, sitmaps, flux Rss</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
+
 </div>  
 </br>   
 <div>
-<h4> <input type="checkbox" id="checkbox2" class="save-checkbox" value="Soumission moteurs  et annuaires" >
-                    <label for="checkbox">Soumission moteurs  </br>   </br> annuaires</label>
-                    <p id="text2" style="display: none;"> Explication ici </p> </h4>
+ <h4>
+    <input type="checkbox" id="checkbox2" class="save-checkbox" value="Soumission moteurs et annuaires" />
+    <label for="checkbox2">Soumission moteurs et annuaires</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>         
 </div>
 </br>   
 
 <div>
-<h4> <input type="checkbox" id="checkbox3" class="save-checkbox" value="Gestion par pages SEO avancé ">
-                    <label for="checkbox"> Gestion par pages SEO avancé </label>
-                    <p id="text3" style="display: none;"> Explication ici </p> </h4>
+  <h4>
+    <input type="checkbox" id="checkbox3" class="save-checkbox" value="Gestion par pages SEO avancé" />
+    <label for="checkbox3">Gestion par pages SEO avancé</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
 </div>
-</br>   
+<br />
 
 <div>
-<h4> <input type="checkbox" id="checkbox4" class="save-checkbox" value="Autopublication Facebook">
-                    <label for="checkbox"> Autopublication Facebook </label>
-                    <p id="text4" style="display: none;"> Explication ici </p> </h4>
+  <h4>
+    <input type="checkbox" id="checkbox4" class="save-checkbox" value="Autopublication Facebook" />
+    <label for="checkbox4">Autopublication Facebook</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
 </div>
-</br>   
+<br />
 
 <div>
-<h4><input type="checkbox" id="checkbox5" class="save-checkbox"  value="Amélioration référencement par script Personnalisé">
-                    <label for="checkbox"> Amélioration référencement </br>   </br> par script Personnalisé </label>
-                    <p id="text5" style="display: none;"> Explication ici </p> </h4>
+  <h4>
+    <input type="checkbox" id="checkbox5" class="save-checkbox" value="Amélioration référencement par script Personnalisé" />
+    <label for="checkbox5">Amélioration référencement</br>par script Personnalisé</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
 </div>
-</br>  
-
-
-<div>
-<h4><input type="checkbox" id="checkbox6" class="save-checkbox" value="Amélioration du chargement des pages ">
-                    <label for="checkbox"> Amélioration du chargement des pages </label>
-                    <p id="text6" style="display: none;"> Explication ici </p> </h4>
-</div>
-</br>   
+<br />
 
 <div>
-<h4><input type="checkbox" id="checkbox7" class="save-checkbox" value="Statistiques">
-                    <label for="checkbox"> Statistiques </label>
-                    <p id="text7" style="display: none;"> Explication ici </p> </h4>
+  <h4>
+    <input type="checkbox" id="checkbox6" class="save-checkbox" value="Amélioration du chargement des pages" />
+    <label for="checkbox6">Amélioration du chargement des pages</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
 </div>
-</br>   
+<br />
 
 <div>
-<h4><input type="checkbox" id="checkbox8" class="save-checkbox" value="Réferencement local dans 25 annulaires + navigateurs" >
-                    <label for="checkbox"> Réferencement local </br>   </br> dans 25 annulaires + navigateurs  </label>
-                    <p id="text8" style="display: none;"> Explication ici </p> </h4>
+  <h4>
+    <input type="checkbox" id="checkbox7" class="save-checkbox" value="Statistiques" />
+    <label for="checkbox7">Statistiques</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
 </div>
+<br />
+
+<div>
+  <h4>
+    <input type="checkbox" id="checkbox8" class="save-checkbox" value="Référencement local dans 25 annulaires + navigateurs" />
+    <label for="checkbox8">Référencement local</br>dans 25 annulaires + navigateurs</label>
+    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+  </h4>
+</div>
+
      
     <td>
     <td><input type="radio" name="LSEO" class="save-radio" value="25">25€</th>
@@ -210,60 +250,70 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
       <td>
 
       <div>
-                    <input type="checkbox" id="checkbox9" class="save-checkbox" value="Firewall & SSL" >
-                    <label for="checkbox">Firewall & SSL</label>
-                    <p id="text9" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-      <div>
-                    <input type="checkbox" id="checkbox10" class="save-checkbox"  value="Accélérateur de performance & CDN" >
-                    <label for="checkbox">Accélérateur de performance & CDN</label>
-                    <p id="text10" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-      <div>
-                    <input type="checkbox" id="checkbox11" class="save-checkbox"  value="Antispam" >
-                    <label for="checkbox">Antispam</label>
-                    <p id="text11" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-      <div>
-                    <input type="checkbox" id="checkbox12" class="save-checkbox"  value="Protection de force brute" >
-                    <label for="checkbox">Protection de force brute</label>
-                    <p id="text12" style="display: none;"> Explication ici </p>
-</div>  
-</br> 
-  <div>
-                    <input type="checkbox" id="checkbox13" class="save-checkbox"  value=" Vérification des modifications ">
-                    <label for="checkbox">Vérification des modifications </br>   </br> FTP&SQL non légitime</label>
-                    <p id="text13" style="display: none;"> Explication ici </p>
-</div> 
- </br>  
- <div>
-                    <input type="checkbox" id="checkbox14" class="save-checkbox"  value="Réseau de protection de force brute" >
-                    <label for="checkbox">Réseau de protection de force brute</label>
-                    <p id="text14" style="display: none;"> Explication ici </p>
-</div>  
- 
- 
-</br> 
-<div>
-                    <input type="checkbox" id="checkbox15" class="save-checkbox"  value="Protection salage">
-                    <label for="checkbox">Protection salage </label>
-                    <p id="text15" style="display: none;"> Explication ici </p>
-</div>    
-</br>   <div>
-                    <input type="checkbox" id="checkbox16" class="save-checkbox"  value="Blocage des utilisateurs exploit">
-                    <label for="checkbox">Blocage des utilisateurs exploit</label>
-                    <p id="text16" style="display: none;"> Explication ici </p>
-</div>  
-</br>     <div>
-                    <input type="checkbox" id="checkbox17" class="save-checkbox"  value="Refonte du site en cas de problème" >
-                    <label for="checkbox">Refonte du site en cas de problème</label>
-                    <p id="text17" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
+  <input type="checkbox" id="checkbox9" class="save-checkbox" value="Firewall & SSL" />
+  <label for="checkbox9">Firewall & SSL</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
+<div>
+  <input type="checkbox" id="checkbox10" class="save-checkbox" value="Accélérateur de performance & CDN" />
+  <label for="checkbox10">Accélérateur de performance & CDN</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox11" class="save-checkbox" value="Antispam" />
+  <label for="checkbox11">Antispam</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox12" class="save-checkbox" value="Protection de force brute" />
+  <label for="checkbox12">Protection de force brute</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox13" class="save-checkbox" value="Vérification des modifications" />
+  <label for="checkbox13">
+    Vérification des modifications <br />
+    <br /> FTP&SQL non légitime
+  </label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox14" class="save-checkbox" value="Réseau de protection de force brute" />
+  <label for="checkbox14">Réseau de protection de force brute</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox15" class="save-checkbox" value="Protection salage" />
+  <label for="checkbox15">Protection salage </label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox16" class="save-checkbox" value="Blocage des utilisateurs exploit" />
+  <label for="checkbox16">Blocage des utilisateurs exploit</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox17" class="save-checkbox" value="Refonte du site en cas de problème" />
+  <label for="checkbox17">Refonte du site en cas de problème</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
                
 </td>
     
@@ -306,41 +356,49 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
       <td>
 
       <div>
-                    <input type="checkbox" id="checkbox18" class="save-checkbox"  value="">
-                    <label for="checkbox">CPU attribué & SSD</label>
-                    <p id="text18" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox19"  class="save-checkbox"  value="">
-                    <label for="checkbox">Nom de dommaine .fr</label>
-                    <p id="text19" style="display: none;"> Explication ici </p>
+  <input type="checkbox" id="checkbox18" class="save-checkbox" value="CPU attribué & SSD" />
+  <label for="checkbox18">CPU attribué & SSD</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
 </div>
-</br>   
+<br />
+
 <div>
-                    <input type="checkbox" id="checkbox20"  class="save-checkbox"  value="">
-                    <label for="checkbox">SQL 512ram/ SSL (Https) </label>
-                    <p id="text20" style="display: none;"> Explication ici </p>
+  <input type="checkbox" id="checkbox19" class="save-checkbox" value="Nom de domaine .fr" />
+  <label for="checkbox19">Nom de domaine .fr</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
 </div>
-</br>  
+<br />
+
 <div>
-                    <input type="checkbox" id="checkbox21"  class="save-checkbox"  value="" >
-                    <label for="checkbox"> Sauvegarde J+15 et J+30 </br>   </br> (sur des hébergeurs différents )</label>
-                    <p id="text21" style="display: none;"> Explication ici </p>
+  <input type="checkbox" id="checkbox20" class="save-checkbox" value="SQL 512ram/ SSL (Https)" />
+  <label for="checkbox20">SQL 512ram/ SSL (Https) </label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
 </div>
-</br>  
+<br />
+
 <div>
-                    <input type="checkbox" id="checkbox22"  class="save-checkbox"  value="">
-                    <label for="checkbox">Administration Réseaux par nos soins </label>
-                    <p id="text22" style="display: none;"> Explication ici </p>
+  <input type="checkbox" id="checkbox21" class="save-checkbox" value="Sauvegarde J+15 et J+30" />
+  <label for="checkbox21">
+    Sauvegarde J+15 et J+30 <br />
+    <br /> (sur des hébergeurs différents )
+  </label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
 </div>
-</br>  
+<br />
+
 <div>
-                    <input type="checkbox" id="checkbox23"  class="save-checkbox"  value="">
-                    <label for="checkbox">Gestion de DNS</label>
-                    <p id="text23" style="display: none;"> Explication ici </p>
+  <input type="checkbox" id="checkbox22" class="save-checkbox" value="Administration Réseaux par nos soins" />
+  <label for="checkbox22">Administration Réseaux par nos soins </label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
 </div>
-</br>  
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox23" class="save-checkbox" value="Gestion de DNS" />
+  <label for="checkbox23">Gestion de DNS</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
 
 
@@ -424,32 +482,32 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
       <td>
 
       <div>
-                    <input type="checkbox" id="checkbox24"  class="save-checkbox"  value="">
-                    <label for="checkbox">Réparation du design reponsive</label>
-                    <p id="text24" style="display: none;"> Explication ici </p>
-</div>  
-</br> 
+  <input type="checkbox" id="checkbox24" class="save-checkbox" value="Réparation du design reponsive" />
+  <label for="checkbox24">Réparation du design reponsive</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
 <div>
-                    <input type="checkbox" id="checkbox25" class="save-checkbox"  value="">
-                    <label for="checkbox">Réparation du squelette du site</label>
-                    <p id="text25" style="display: none;"> Explication ici </p>
-</div>  
-</br>
+  <input type="checkbox" id="checkbox25" class="save-checkbox" value="Réparation du squelette du site" />
+  <label for="checkbox25">Réparation du squelette du site</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
 <div>
-                    <input type="checkbox" id="checkbox26" class="save-checkbox"  value="">
-                    <label for="checkbox">Adaptation sur différents navigateurs internet</label>
-                    <p id="text26" style="display: none;"> Explication ici </p>
-</div>  
-</br>
+  <input type="checkbox" id="checkbox26" class="save-checkbox" value="Adaptation sur différents navigateurs internet" />
+  <label for="checkbox26">Adaptation sur différents navigateurs internet</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
 <div>
-                    <input type="checkbox" id="checkbox27" class="save-checkbox"  value="">
-                    <label for="checkbox">Réparation de bugs entre versions </label>
-                    <p id="text27" style="display: none;"> Explication ici </p>
-</div>  
-</br>
+  <input type="checkbox" id="checkbox27" class="save-checkbox" value="Réparation de bugs entre versions" />
+  <label for="checkbox27">Réparation de bugs entre versions</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
   
 
@@ -494,55 +552,59 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     <tr>
       <td>
       <div>
-                    <input type="checkbox" id="checkbox28" class="save-checkbox"  value="">
-                    <label for="checkbox">Suivi récurrent</label>
-                    <p id="text28" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox29" class="save-checkbox"  value="">
-                    <label for="checkbox"> Mise à jour CMS + Modules</label>
-                    <p id="text29" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox30" class="save-checkbox"  value="">
-                    <label for="checkbox">Support, gestion administrative</label>
-                    <p id="text30" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox31" class="save-checkbox"  value="">
-                    <label for="checkbox">Modification du contenu sur demande </label>
-                    <p id="text31" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox32" class="save-checkbox"  value="">
-                    <label for="checkbox">Correction & Gestion </br>   </br> des formulaires personnalisés</label>
-                    <p id="text32" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox33" class="save-checkbox"  value="">
-                    <label for="checkbox">Téléphone/mail d'urgence </br>   </br>weekend et jour férié</label>
-                    <p id="text33" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>
-                    <input type="checkbox" id="checkbox34" class="save-checkbox"  value="">
-                    <label for="checkbox">Formation à l'administration </label>
-                    <p id="text34" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
-<div>               
-                     
-                    <input type="checkbox" id="checkbox35" class="save-checkbox"  value="">
-                    <label for="checkbox36"> Gestion de l'ensemble des factures</label>
-                    <p id="text35" style="display: none;"> Explication ici </p>
-</div>  
-</br>   
+  <input type="checkbox" id="checkbox28" class="save-checkbox" value="Suivi récurrent" />  <label for="checkbox28">Suivi récurrent</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
+<div>
+  <input type="checkbox" id="checkbox29" class="save-checkbox" value="Mise à jour CMS + Modules" />
+  <label for="checkbox29">Mise à jour CMS + Modules</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox30" class="save-checkbox" value="Support, gestion administrative" />
+  <label for="checkbox30">Support, gestion administrative</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox31" class="save-checkbox" value="Modification du contenu sur demande" />
+  <label for="checkbox31">Modification du contenu sur demande</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox32" class="save-checkbox" value="Correction & Gestion des formulaires personnalisés" />
+  <label for="checkbox32">Correction & Gestion des formulaires personnalisés</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox33" class="save-checkbox" value="Téléphone/mail d'urgence weekend et jour férié" />
+  <label for="checkbox33">Téléphone/mail d'urgence weekend et jour férié</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox34" class="save-checkbox" value="Formation à l'administration" />
+  <label for="checkbox34">Formation à l'administration</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
+
+<div>
+  <input type="checkbox" id="checkbox35" class="save-checkbox" value="Gestion de l'ensemble des factures" />
+  <label for="checkbox35">Gestion de l'ensemble des factures</label>
+  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
+</div>
+<br />
 
     <td><td><input type="radio" name="WebAss" class="save-radio" value="25">25€</td>
 <td><input type="radio" name="WebAss"class="save-radio" value="25">25€</td>
@@ -663,10 +725,18 @@ checkboxes.forEach(function(checkbox) {
     </tbody>
  </table>
 
+ <script>
+ const tooltips = document.querySelectorAll('.tooltip');
+
+tooltips.forEach(tooltip => {
+  tooltip.addEventListener('click', () => {
+    tooltip.classList.toggle('active');
+  });
+});
+</script>
 
 
-
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   
 
   function toggleCheckbox(checkboxxId, textId) {
@@ -724,9 +794,9 @@ var checkboxes = [
 
 for (var i = 0; i < checkboxes.length; i++) {
  toggleCheckbox(checkboxes[i].id, checkboxes[i].textId);
-}
+} -->
 
-// document.getElementById('checkbox').addEventListener('change', function() {
+<!-- // document.getElementById('checkbox').addEventListener('change', function() {
 //  var text = document.getElementById('text');
  
 //  if (this.checked) {
@@ -746,7 +816,7 @@ for (var i = 0; i < checkboxes.length; i++) {
 //  }
 // });
 
-</script>
+</script> -->
 
 <div id="totalCost"></div>
 
@@ -803,7 +873,7 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
 
 $bdd = new PDO("mysql:host=localhost;dbname=formoro", "root", "formoroBd01.");
 
-// Assuming 'myTable' is the name of your table
+// Assuming 'myTable' is the name of your table , ici pour les "save"
 $checkbox_values = $_POST['save-checkbox'];
 $radio_value = $_POST['save-radio'];
 
