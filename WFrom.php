@@ -52,18 +52,16 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   .tooltip {
   position: relative;
   cursor: help;
+
 }
 
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: 100%;
-  left: 210px;
-  transform: translateX(-50%) translateY(10px);
   background-color: #333;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 55px 30px;
+  border-radius: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -71,6 +69,103 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 .tooltip.active::after {
   opacity: 1;
 }
+
+.te{
+  position: absolute;
+			top: 100;
+			left: 0;
+}
+
+.toggle-container {
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 26px;
+    border-radius: 26px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-text {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    font-size: 14px;
+    color: #fff;
+    user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  
+  
+  .toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    left:1820px;
+    top:-350px;
+    
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 26px;
+    border-radius: 26px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .toggle-text {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 14px;
+    color: #fff;
+    user-select: none;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #2196F3;
+
+  }
+  
+  
+  .toggle-checkbox:checked + .toggle-label ~ .toggle-text:before {
+    content: "ON";
+    display: inline;
+    cursor: pointer;
+
+  }
+  
+  .toggle-checkbox:not(:checked) + .toggle-label ~ .toggle-text:before {
+    content: "OFF";
+    display: inline;
+    cursor: pointer;
+
+  }
+  
 
     </style>
 
@@ -92,9 +187,11 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   <a href="#Webmaster">Webmaster/Assistance </a>
   <a href="#choix">Choix</a>
 
-
+ 
 
 </nav>
+
+
 </header>
 <div class="test">
 
@@ -132,9 +229,35 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   </th>
     </tr>
 
-  </thead>
+  </thead>     
 
   <tbody>
+
+<div class="te">
+  <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label for="toggle" class="toggle-label"> </label>
+            <span class="toggle-text"></span>
+            
+          </div>
+</div> 
+
+
+
+<script>
+        document.addEventListener('click', function(event) {
+            const container = event.target.closest('.toggle-container')
+            if (container) {
+                const checkbox = container.querySelector('.toggle-checkbox')
+                if (checkbox.checked) {
+                    window.location.href = 'index.php'
+                } else {
+                    window.location.href = 'WFrom.php'
+                }
+            }
+        })
+    </script>
+
     <tr>
       <td>
 
@@ -899,7 +1022,7 @@ if ($stmt->execute()) {
 ?>
 
 
-// <!-- <script>
+<!-- // <script>
 // $(document).ready(function() {
 //   $('.save-checkbox, .save-radio').click(function() {
 //     var elementId = $(this).data('id');
@@ -922,10 +1045,25 @@ if ($stmt->execute()) {
 // $id = $_POST['id'];
 // $stmt->execute();
 // echo 'Enregistrement dans la base de données réussi';
-// ?>
+// ?> -->
 
 </section>
-  
+
+<!-- <script>
+document.addEventListener('click', function(event) {
+    const container = event.target.closest('.toggle-container');
+    if (container) {
+      container.querySelector('.toggle-checkbox').click();
+    }
+  });
+
+
+</script> -->
+
+
+
+
+
 
 </div>
 
