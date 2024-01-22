@@ -207,6 +207,18 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
             }
         })
     </script>
+<script>
+document.addEventListener('click', function(event) {
+    const container = event.target.closest('.toggle-container');
+    if (container) {
+      container.querySelector('.toggle-checkbox').click();
+    }
+  });
+
+
+</script>
+
+
 </header>
 <div class="test">
 
