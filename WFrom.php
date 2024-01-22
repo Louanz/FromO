@@ -70,11 +70,6 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   opacity: 1;
 }
 
-.te{
-  position: absolute;
-			top: 100;
-			left: 0;
-}
 
 .toggle-container {
     display: inline-block;
@@ -100,8 +95,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   
   .toggle-text {
     position: absolute;
-    top: 2px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -115,9 +110,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     display: inline-block;
     width: 60px;
     height: 20px;
-    left:1820px;
-    top:-350px;
-    
+    left:1400px;
+
   }
   
   .toggle-checkbox {
@@ -139,8 +133,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   
   .toggle-text {
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 3px;
+    left: -85px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -191,7 +185,28 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 
 </nav>
 
+  <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label for="toggle" class="toggle-label"> </label>
+            <span class="toggle-text"></span>
+            
+</div> 
 
+
+
+<script>
+        document.addEventListener('click', function(event) {
+            const container = event.target.closest('.toggle-container')
+            if (container) {
+                const checkbox = container.querySelector('.toggle-checkbox')
+                if (checkbox.checked) {
+                    window.location.href = 'index.php'
+                } else {
+                    window.location.href = 'WFrom.php'
+                }
+            }
+        })
+    </script>
 </header>
 <div class="test">
 
@@ -206,6 +221,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 <div class="logg">
 <p> lal</p>
 </div>
+
+
 
 </header>
 
@@ -233,30 +250,6 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 
   <tbody>
 
-<div class="te">
-  <div class="toggle-container">
-            <input type="checkbox" id="toggle" class="toggle-checkbox">
-            <label for="toggle" class="toggle-label"> </label>
-            <span class="toggle-text"></span>
-            
-          </div>
-</div> 
-
-
-
-<script>
-        document.addEventListener('click', function(event) {
-            const container = event.target.closest('.toggle-container')
-            if (container) {
-                const checkbox = container.querySelector('.toggle-checkbox')
-                if (checkbox.checked) {
-                    window.location.href = 'index.php'
-                } else {
-                    window.location.href = 'WFrom.php'
-                }
-            }
-        })
-    </script>
 
     <tr>
       <td>
