@@ -110,7 +110,7 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     display: inline-block;
     width: 60px;
     height: 20px;
-    left:1400px;
+    left:7px;
 
   }
   
@@ -134,7 +134,7 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   .toggle-text {
     position: absolute;
     top: 3px;
-    left: -85px;
+    right: 300px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -160,7 +160,27 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 
   }
   
+  #arrow {
+  position: fixed;
+  left: 0;
+  top: 120px;
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
 
+#element {
+  position: fixed;
+  margin-left: -500px;
+  margin-top:-360px;
+}
+#element {
+  display: none;
+}
+#element:target {
+  display: block;
+}
     </style>
 
     </head>
@@ -181,42 +201,9 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   <a href="#Webmaster">Webmaster/Assistance </a>
   <a href="#choix">Choix</a>
 
- 
 
 </nav>
 
-  <div class="toggle-container">
-            <input type="checkbox" id="toggle" class="toggle-checkbox">
-            <label for="toggle" class="toggle-label"> </label>
-            <span class="toggle-text"></span>
-            
-</div> 
-
-
-
-<script>
-        document.addEventListener('click', function(event) {
-            const container = event.target.closest('.toggle-container')
-            if (container) {
-                const checkbox = container.querySelector('.toggle-checkbox')
-                if (checkbox.checked) {
-                    window.location.href = 'index.php'
-                } else {
-                    window.location.href = 'WFrom.php'
-                }
-            }
-        })
-    </script>
-<script>
-document.addEventListener('click', function(event) {
-    const container = event.target.closest('.toggle-container');
-    if (container) {
-      container.querySelector('.toggle-checkbox').click();
-    }
-  });
-
-
-</script>
 
 
 </header>
@@ -254,6 +241,60 @@ document.addEventListener('click', function(event) {
 
     
     <div class="ch">
+
+    <div id="arrow">▸</div>
+<div id="element">
+<div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label for="toggle" class="toggle-label"> </label>
+            <span class="toggle-text"></span>
+            
+</div> 
+
+
+<script>
+        document.addEventListener('click', function(event) {
+            const container = event.target.closest('.toggle-container')
+            if (container) {
+                const checkbox = container.querySelector('.toggle-checkbox')
+                if (checkbox.checked) {
+                    window.location.href = 'index.php'
+                } else {
+                    window.location.href = 'WFrom.php'
+                }
+            }
+        })
+    </script>
+<script>
+document.addEventListener('click', function(event) {
+    const container = event.target.closest('.toggle-container');
+    if (container) {
+      container.querySelector('.toggle-checkbox').click();
+    }
+  });
+
+
+</script>
+
+
+</div>
+
+<script>
+  var arrow = document.getElementById("arrow");
+var element = document.getElementById("element");
+
+arrow.addEventListener("click", function() {
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+});
+
+</script>
+
+
+
 
   </th>
     </tr>
