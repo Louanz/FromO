@@ -48,35 +48,9 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     }
   }
 
- 
-  .tooltip {
-  position: relative;
-  cursor: help;
 
-}
+/* Toogle */
 
-.tooltip::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 55px 30px;
-  border-radius: 30px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.tooltip.active::after {
-  opacity: 1;
-}
-
-
-.toggle-container {
-    display: inline-block;
-    width: 60px;
-    height: 26px;
-  }
-  
   .toggle-checkbox {
     display: none;
   }
@@ -132,7 +106,7 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   }
   
   .toggle-text {
-    position: absolute;
+    position: absolute;$
     top: 3px;
     right: 300px;
     font-size: 14px;
@@ -181,8 +155,17 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 #element:target {
   display: block;
 }
+
+ .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+
     </style>
 
+<form method="post" action="traitement.php"> 
     </head>
     <body>
     <!-- <form method="post" action="enregistrement.php"> -->
@@ -235,6 +218,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     <tr>
       <th>Licence SEO</th>
       <th> 
+
+
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
     <th> <p> L3 </p> </th>
@@ -244,6 +229,7 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 
     <div id="arrow">▸</div>
 <div id="element">
+
 <div class="toggle-container">
             <input type="checkbox" id="toggle" class="toggle-checkbox">
             <label for="toggle" class="toggle-label"> </label>
@@ -312,8 +298,8 @@ arrow.addEventListener("click", function() {
       <h4>
     <input type="checkbox" id="checkbox1" class="save-checkbox" value="Robots, sitmaps, flux Rss" />
     <label for="checkbox1">Robots, sitmaps, flux Rss</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé 1">🛈</div>
+      </h4>
 
 </div>  
 </br>   
@@ -321,8 +307,8 @@ arrow.addEventListener("click", function() {
  <h4>
     <input type="checkbox" id="checkbox2" class="save-checkbox" value="Soumission moteurs et annuaires" />
     <label for="checkbox2">Soumission moteurs et annuaires</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>         
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>    </h4>         
 </div>
 </br>   
 
@@ -330,8 +316,8 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox3" class="save-checkbox" value="Gestion par pages SEO avancé" />
     <label for="checkbox3">Gestion par pages SEO avancé</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>   </h4>
 </div>
 <br />
 
@@ -339,8 +325,8 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox4" class="save-checkbox" value="Autopublication Facebook" />
     <label for="checkbox4">Autopublication Facebook</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>   </h4>
 </div>
 <br />
 
@@ -348,8 +334,8 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox5" class="save-checkbox" value="Amélioration référencement par script Personnalisé" />
     <label for="checkbox5">Amélioration référencement</br>par script Personnalisé</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>    </h4>
 </div>
 <br />
 
@@ -357,8 +343,8 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox6" class="save-checkbox" value="Amélioration du chargement des pages" />
     <label for="checkbox6">Amélioration du chargement des pages</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>   </h4>
 </div>
 <br />
 
@@ -366,8 +352,8 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox7" class="save-checkbox" value="Statistiques" />
     <label for="checkbox7">Statistiques</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>   </h4>
 </div>
 <br />
 
@@ -375,11 +361,20 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox8" class="save-checkbox" value="Référencement local dans 25 annulaires + navigateurs" />
     <label for="checkbox8">Référencement local</br>dans 25 annulaires + navigateurs</label>
-    <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-  </h4>
+    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+</div>    </h4>
 </div>
 
-     
+<script>
+const tooltips = document.querySelectorAll('.tooltip');
+
+tooltips.forEach(tooltip => {
+  tooltip.addEventListener('click', () => {
+    alert(tooltip.getAttribute('data-tooltip'));
+  });
+});
+</script>
+
     <td>
     <td><input type="radio" name="LSEO" class="save-radio" value="25">25€</th>
      <th><input type="radio" name="LSEO" class="save-radio" value="30">30€</th>
@@ -492,7 +487,8 @@ arrow.addEventListener("click", function() {
      <td><input type="radio" name="LS" class="save-radio" value="35">35€ </td>
         
 </td>
-   
+
+
       </tr>
 
 </table>
@@ -893,17 +889,6 @@ checkboxes.forEach(function(checkbox) {
       </tr>
     </tbody>
  </table>
-
- <script>
- const tooltips = document.querySelectorAll('.tooltip');
-
-tooltips.forEach(tooltip => {
-  tooltip.addEventListener('click', () => {
-    tooltip.classList.toggle('active');
-  });
-});
-</script>
-
 
 <!-- <script type="text/javascript">
   

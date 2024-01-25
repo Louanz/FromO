@@ -26,7 +26,7 @@ if (isset($_POST["role"]) && isset($_POST["password"])) {
     $password = $_POST["password"];
 
     if ($roles[$role] === $password) {
-        header("Location: Wfrom.php");
+        header("Location: WFrom.php");
         exit();
     } else {
         echo "<script>alert('Erreur: mot de passe'); redirect();</script>";

@@ -120,12 +120,6 @@ margin-right:270px;
 
  
 
-  .toggle-container {
-    position: absolute;
-    display: inline-block;
-    left:0;
-  }
-  
   .toggle-checkbox {
     display: none;
   }
@@ -145,7 +139,7 @@ margin-right:270px;
   .toggle-text {
     position: absolute;
     top: 2px;
-    left: 1px;
+    left: 2+1px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -160,8 +154,8 @@ margin-right:270px;
     display: inline-block;
     width: 60px;
     height: 20px;
-    left:1070px;
-    top:-340px;
+    left:-650px;
+    top:-157px;
   }
   
   .toggle-checkbox {
@@ -209,16 +203,78 @@ margin-right:270px;
     cursor: pointer;
 
   }
+
+
+   
+  #arrow {
+  position: fixed;
+  left: 0;
+  top: 120px;
+  transform: translateY(-50%);
+  background-color: #0c6688;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#element {
+  position: fixed;
+  margin-left: -500px;
+  margin-top:-360px;
+}
+#element {
+  display: none;
+}
+#element:target {
+  display: block;
+}
+
 </style>
    
     </head>
     <body>
 
-        <div class="toggle-container">
+        
+    <div id="arrow">▸</div>
+<div id="element">
+<div class="toggle-container">
+
             <input type="checkbox" id="toggle" class="toggle-checkbox">
             <label for="toggle" class="toggle-label"> </label>
             <span class="toggle-text"></span>
-          </div>
+            
+</div> 
+
+
+<script>
+        document.addEventListener('click', function(event) {
+            const container = event.target.closest('.toggle-container')
+            if (container) {
+                const checkbox = container.querySelector('.toggle-checkbox')
+                if (checkbox.checked) {
+                    window.location.href = 'index.php'
+                } else {
+                    window.location.href = 'WFrom.php'
+                }
+            }
+        })
+    </script>
+
+
+</div>
+
+<script>
+  var arrow = document.getElementById("arrow");
+var element = document.getElementById("element");
+
+arrow.addEventListener("click", function() {
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+});
+
+</script>
 
     <section>
     <H1> Identifiez-vous </H1> 
@@ -243,29 +299,7 @@ margin-right:270px;
     </form>
 </section>
 
-<script>
-document.addEventListener('click', function(event) {
-    const container = event.target.closest('.toggle-container');
-    if (container) {
-      container.querySelector('.toggle-checkbox').click();
-    }
-  });
 
-
-</script>
-<script>
-        document.addEventListener('click', function(event) {
-            const container = event.target.closest('.toggle-container')
-            if (container) {
-                const checkbox = container.querySelector('.toggle-checkbox')
-                if (checkbox.checked) {
-                    window.location.href = 'WFrom.php'
-                } else {
-                    window.location.href = 'index.php'
-                }
-            }
-        })
-    </script>
 
 </body>
 </html>
