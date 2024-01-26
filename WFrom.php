@@ -8,6 +8,14 @@
         <title>FormO</title>
 
         <style>
+          /* h1 {
+  margin-top: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+} */
+
     .test {
       text-align: center;
         background:white;
@@ -433,6 +441,9 @@ arrow.addEventListener("click", function() {
     <p>Voici le contenu du modal 8.</p>
   </div>
 </div>    </h4>
+
+
+
 </div>
 
 
@@ -1252,8 +1263,32 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
 
 
 
-<section id="choix">
 
+<section id="choix">
+  <H1>Vous avez sélectionné : </H1>
+<p id="selected-item1"></p>
+<p id="selected-item2"></p>
+<p id="selected-item3"></p>
+<p id="selected-item4"></p>
+<p id="selected-item5"></p>
+<p id="selected-item6"></p>
+<p id="selected-item7"></p>
+<p id="selected-item8"></p>
+
+<script>
+  const checkboxes = document.querySelectorAll('.save-checkbox');
+  const selectedItems = document.querySelectorAll('p[id^="selected-item"]');
+
+  checkboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        selectedItems[index].textContent = `"${checkbox.value}"`;
+      } else {
+        selectedItems[index].textContent = '';
+      }
+    });
+  });
+</script>
 <!-- <?php
 
 $bdd = new PDO("mysql:host=localhost;dbname=formoro", "root", "17yp~I26u");
@@ -1281,23 +1316,7 @@ if ($stmt->execute()) {
 }
 ?> -->
 
-<H1> zkazdeé</H1>
-<script>
-const buttons = document.querySelectorAll('.save-button');
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const checkboxes = document.querySelectorAll('.save-checkbox:checked');
-    let checkedItems = '';
-
-    checkboxes.forEach(checkbox => {
-      checkedItems += `- ${checkbox.value}\n`;
-    });
-
-    alert(`Éléments cochés :\n\n${checkedItems}`);
-  });
-});
-</script>
 
 <!-- // <script>
 // $(document).ready(function() {
