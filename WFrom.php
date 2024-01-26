@@ -161,7 +161,31 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   display: inline-block;
 }
 
+.modal {
+  cursor: help;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
 
+.modal-content {
+  cursor: help;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  margin-left: 1020px;
+  text-align:left;
+}
 
     </style>
 
@@ -281,7 +305,6 @@ arrow.addEventListener("click", function() {
 
 
 
-
   </th>
     </tr>
 
@@ -298,7 +321,16 @@ arrow.addEventListener("click", function() {
       <h4>
     <input type="checkbox" id="checkbox1" class="save-checkbox" value="Robots, sitmaps, flux Rss" />
     <label for="checkbox1">Robots, sitmaps, flux Rss</label>
-    <div class="tooltip" data-tooltip="Message personnalisé 1">🛈</div>
+    <!-- <div class="tooltip" data-tooltip="Message personnalisé 1">🛈</div> -->
+    
+    <button id="open-modal-btn1" data-target="modal1" style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>description de"Robots, sitmaps, flux Rss" </p>
+  </div>
+</div>
+
       </h4>
 
 </div>  
@@ -307,8 +339,16 @@ arrow.addEventListener("click", function() {
  <h4>
     <input type="checkbox" id="checkbox2" class="save-checkbox" value="Soumission moteurs et annuaires" />
     <label for="checkbox2">Soumission moteurs et annuaires</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
-</div>    </h4>         
+
+    <button id="open-modal-btn2" data-target="modal2"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 2.</p>
+  </div>
+</div>
+
+  </div>    </h4>         
 </div>
 </br>   
 
@@ -316,7 +356,12 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox3" class="save-checkbox" value="Gestion par pages SEO avancé" />
     <label for="checkbox3">Gestion par pages SEO avancé</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn3" data-target="modal3"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" >&times;</span>
+    <p>Voici le contenu du modal 3.</p>
+  </div>
 </div>   </h4>
 </div>
 <br />
@@ -325,7 +370,12 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox4" class="save-checkbox" value="Autopublication Facebook" />
     <label for="checkbox4">Autopublication Facebook</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn4" data-target="modal4"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 4.</p>
+  </div>
 </div>   </h4>
 </div>
 <br />
@@ -334,7 +384,12 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox5" class="save-checkbox" value="Amélioration référencement par script Personnalisé" />
     <label for="checkbox5">Amélioration référencement</br>par script Personnalisé</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn5" data-target="modal5"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 5.</p>
+  </div>
 </div>    </h4>
 </div>
 <br />
@@ -343,7 +398,12 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox6" class="save-checkbox" value="Amélioration du chargement des pages" />
     <label for="checkbox6">Amélioration du chargement des pages</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn6" data-target="modal6"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 6.</p>
+  </div>
 </div>   </h4>
 </div>
 <br />
@@ -352,7 +412,12 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox7" class="save-checkbox" value="Statistiques" />
     <label for="checkbox7">Statistiques</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn7" data-target="modal7"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 7.</p>
+  </div>
 </div>   </h4>
 </div>
 <br />
@@ -361,19 +426,15 @@ arrow.addEventListener("click", function() {
   <h4>
     <input type="checkbox" id="checkbox8" class="save-checkbox" value="Référencement local dans 25 annulaires + navigateurs" />
     <label for="checkbox8">Référencement local</br>dans 25 annulaires + navigateurs</label>
-    <div class="tooltip" data-tooltip="Message personnalisé z">🛈</div>
+    <button id="open-modal-btn8" data-target="modal8"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal8" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 8.</p>
+  </div>
 </div>    </h4>
 </div>
 
-<script>
-const tooltips = document.querySelectorAll('.tooltip');
-
-tooltips.forEach(tooltip => {
-  tooltip.addEventListener('click', () => {
-    alert(tooltip.getAttribute('data-tooltip'));
-  });
-});
-</script>
 
     <td>
     <td><input type="radio" name="LSEO" class="save-radio" value="25">25€</th>
@@ -416,30 +477,50 @@ tooltips.forEach(tooltip => {
       <div>
   <input type="checkbox" id="checkbox9" class="save-checkbox" value="Firewall & SSL" />
   <label for="checkbox9">Firewall & SSL</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn9" data-target="modal9"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal9" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 9.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox10" class="save-checkbox" value="Accélérateur de performance & CDN" />
   <label for="checkbox10">Accélérateur de performance & CDN</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn10" data-target="modal10"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal10" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 10.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox11" class="save-checkbox" value="Antispam" />
   <label for="checkbox11">Antispam</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn11" data-target="modal11"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal11" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 11.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox12" class="save-checkbox" value="Protection de force brute" />
   <label for="checkbox12">Protection de force brute</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn12" data-target="modal12"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal12" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 12.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox13" class="save-checkbox" value="Vérification des modifications" />
@@ -447,38 +528,63 @@ tooltips.forEach(tooltip => {
     Vérification des modifications <br />
     <br /> FTP&SQL non légitime
   </label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn13" data-target="modal13"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal13" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 13.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox14" class="save-checkbox" value="Réseau de protection de force brute" />
   <label for="checkbox14">Réseau de protection de force brute</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn5" data-target="modal5"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal14" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 5.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox15" class="save-checkbox" value="Protection salage" />
   <label for="checkbox15">Protection salage </label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn5" data-target="modal5"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 5.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox16" class="save-checkbox" value="Blocage des utilisateurs exploit" />
   <label for="checkbox16">Blocage des utilisateurs exploit</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
+  <button id="open-modal-btn5" data-target="modal5"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 5.</p>
+  </div></div>
+<br/>
+<br/>
 
 <div>
   <input type="checkbox" id="checkbox17" class="save-checkbox" value="Refonte du site en cas de problème" />
   <label for="checkbox17">Refonte du site en cas de problème</label>
-  <span class="tooltip" data-tooltip="Ceci est un outil d'information">🛈</span>
-</div>
-<br />
-               
+  <button id="open-modal-btn5" data-target="modal5"style=" height: 18px; width: 18px; border-radius: 100px; cursor: pointer; border-style: none;">i</button>
+    <div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Voici le contenu du modal 5.</p>
+  </div></div>
+<br/>
+<br/>
+
 </td>
     
      <td>
@@ -799,9 +905,8 @@ tooltips.forEach(tooltip => {
 
   </th>
     </tr>
-
+    
   </thead>
-
 
 
 
@@ -812,7 +917,42 @@ tooltips.forEach(tooltip => {
 
 
 
+<script>
+function showModal(targetId) {
+  const modal = document.getElementById(targetId);
+  modal.style.display = 'block';
+}
 
+const openModalBtns = document.querySelectorAll('button[data-target]');
+
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault(); // Empêche le comportement par défaut du bouton
+    const targetId = btn.getAttribute('data-target');
+    showModal(targetId);
+  });
+});
+
+// Fermeture des modals
+const closeBtns = document.querySelectorAll('.modal .close');
+
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    modal.style.display = 'none';
+  });
+});
+
+// Fermeture des modals en cliquant en dehors
+window.addEventListener('click', (event) => {
+  const modals = document.querySelectorAll('.modal');
+  if (event.target == modals) {
+    modals.forEach(modal => {
+      modal.style.display = 'none';
+    });
+  }
+});
+</script>
 
 
 
@@ -1023,34 +1163,35 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
 
 
 <section id="choix">
+
 <?php
 
-$bdd = new PDO("mysql:host=localhost;dbname=formoro", "root", "formoroBd01.");
+$bdd = new PDO("mysql:host=localhost;dbname=formoro", "root", "17yp~I26u");
 
-// Assuming 'myTable' is the name of your table , ici pour les "save"
 $checkbox_values = $_POST['save-checkbox'];
 $radio_value = $_POST['save-radio'];
 
 foreach ($checkbox_values as $checkbox_value) {
-  // Use prepared statements to avoid SQL injection
   $stmt = $bdd->prepare("INSERT INTO save (checkbox_column) VALUES (:checkbox_value)");
   $stmt->bindParam(':checkbox_value', $checkbox_value);
   if ($stmt->execute()) {
     echo "Data successfully inserted";
   } else {
-    echo "Error: " . $stmt->errorInfo()[2]; // Display the error message
+    echo "Error: " . $stmt->errorInfo()[2]; 
   }
 }
 
-// Same for radio value
+
 $stmt = $bdd->prepare("INSERT INTO myTable (radio_column) VALUES (:radio_value)");
 $stmt->bindParam(':radio_value', $radio_value);
 if ($stmt->execute()) {
   echo "Data successfully inserted";
 } else {
-  echo "Error: " . $stmt->errorInfo()[2]; // Display the error message
+  echo "Error: " . $stmt->errorInfo()[2]; 
 }
 ?>
+
+
 
 
 <!-- // <script>
