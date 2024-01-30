@@ -39,7 +39,7 @@ header nav a.active,
 header nav a{
     padding:10px 25px;
     color: azure;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
 }
 header nav a:hover{
@@ -102,7 +102,7 @@ table {
     width: 43%;
     margin: 0;
     text-align: left;
-    background:#d2e6f5;
+    background: linear-gradient(90deg, rgba(122,180,201,1) 32%, rgba(135,163,202,1) 63%);
     color:#12165f;
     border-radius: 40px;
 
