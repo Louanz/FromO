@@ -193,6 +193,15 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   margin-left: 1020px;
   text-align:left;
 }
+@media (max-width: 1400px) {
+  .modal-content {
+    margin-left: 400px;
+
+    margin-top: 300px;
+    width: 500px;
+  }
+}
+
 
 
 
@@ -1377,7 +1386,7 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
   });
 </script>
 
-<?php
+<!-- <?php
 
 $bdd = new P("mysql:hostlocalhost;dbnameformoro", "root", "7yp~I26u");
 
@@ -1393,7 +1402,7 @@ foreach ($checkbox_values as $checkbox_value) {
   }
 }
 
-?>
+?> -->
 
 
 </section>
@@ -1414,7 +1423,7 @@ foreach ($checkbox_values as $checkbox_value) {
 // });
 // </script>
 
-<?php
+ <?php
 
 $bdd = new PDO("mysql:host=localhost;dbname=formoro", "root", "17yp~I26u");
 
@@ -1437,9 +1446,9 @@ $stmt->bindParam(':radio_value', $radio_value);
 if ($stmt->execute()) {
   echo "Data successfully inserted";
 } else {
-  echo "Error: " . $stmt->errorInfo()[2]; 
+  echo "Error: " . $stmt->errorInfo()[2];   
 }
-?> 
+?>  
 
 
 // $pdo = new PDO('mysql:');
@@ -1451,8 +1460,8 @@ if ($stmt->execute()) {
 // $id = $_POST['id'];
 // $stmt->execute();
 // echo 'Enregistrement dans la base de données réussi';
-// ?> -->
-
+// ?> 
+-->
 </section>
 
 <!-- <script>
