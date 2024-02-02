@@ -15,12 +15,350 @@
 p {
   margin-bottom: 1em;
 } */
+
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+ 
+  body > *  {
+    margin: auto;
+  }  
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    background:#0c6688;
+    padding: 20px;
+    text-align: left;
+    text-indent :100px;
+    font-size: 17px;
+    background-color: transparent;
+    margin-top:10px;
+
+
+}
+
+@media (max-width: 1370px) { 
+
+    header {
+       line-height: 40px;
+       text-align: right;
+        } }
+
+
+header nav a.active,
+header nav a{
+    padding:10px 25px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+header nav a:hover{
+
+}
+@media (max-width: 1000px) { 
+    header nav a.active,
+    header nav a {
+      color: white;
+
+    }
+
+        } 
+      
+
+
+section{
+
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+#LSEO-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#LSEO {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+#LS-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#LS {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+#Heb-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#Heb {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+#MJS-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+#MJS{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+ #Intrg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+ #Intrg{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+  #Webmaster-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+  #Webmaster{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+  #choix-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+  #choix{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/* @media (max-width: 1000px) {
+  #LSEO-video {
+   
+  }
+
+  #LSEO {
+    position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  }
+} */
+
+
+
+/* @media (max-width: 1000px) {
+    
+    section{
+       
+        min-height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background:rgba(233, 239, 240, 0.925);
+        font-weight: bolder;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    }
+ */
+
+/* scroll-behavior: auto; */
+
+
+.I1 {
+    width : 10px;
+    height : 15px;
+    }
+
+
+/* code table */
+table {
+    width: 45%;
+    margin: 0;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(122,180,201,1) 32%, rgba(135,163,202,1) 63%);
+    color:#12165f;
+    border-radius: 40px;
+    font-size: 15px;
+
+    
+}
+
+/* @media (max-width: 1000px) {
+    
+    table{
+        width: 20%;
+        text-align: center;
+        background: hsl(232, 22%, 90%);
+        color: rgb(57, 57, 109);
+        border-radius: 40px;
+        
+
+    }
+} */
+
+
+th, td {
+    padding: 23px;
+  }
+ 
+  @media (max-width: 1000px) {
+    
+    th{
+        text-align: right;
+    }
+}
+
+h4{
+    margin-left: 40px;
+
+}
+
+h5{
+  font-size:23px;
+
+}
+
+
+
+
+/* Cacher la case à cocher native */
+
+
     .test {
       text-align: center;
-        background:white;
+        background:azure;
         position: fixed;
         display: block;
-        width: 300px;
+        width: 340px;
         padding: 80px;
         top: 50%;
         left: 87%;
@@ -28,10 +366,11 @@ p {
         color:azure;
         border-radius: 40px;
         box-shadow:
-        -webkit-box-shadow:0px 0px 45px 6px rgba(12,103,136,0.87);
--moz-box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
-box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
+        -webkit-box-shadow: 2px 3px 16px 11px #15075E; 
+box-shadow: 2px 3px 16px 11px #15075E;
         color:#12165f;
+        z-index: 1;
+
     }
 
     @media (max-width: 1060px) {
@@ -41,6 +380,8 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     left: 80%;
     top: 90%;
     padding: 47px;
+    z-index: 1;
+
   }
     }
 
@@ -55,67 +396,34 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
     }
   }
 
-
 /* Toogle */
 
   .toggle-checkbox {
     display: none;
   }
   
-  .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 58px;
-    height: 26px;
-    border-radius: 26px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .toggle-text {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 14px;
-    color: #fff;
-    user-select: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  }
-  
-  
   .toggle-container {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 20px;
-    left:7px;
-
-  }
-  
-  .toggle-checkbox {
-    display: none;
   }
   
   .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    margin-top: 0;
+   margin-left: 0;
     width: 58px;
     height: 26px;
     border-radius: 26px;
-    background-color: #ccc;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
   }
   
   .toggle-text {
-    position: absolute;$
-    top: 3px;
-    right: 300px;
+    position: absolute;
+    top: 4px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -146,15 +454,15 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   left: 0;
   top: 120px;
   transform: translateY(-50%);
-  background-color: #f2f2f2;
+  background-color: transparent;
   padding: 10px;
   cursor: pointer;
 }
 
 #element {
   position: fixed;
-  margin-left: -500px;
-  margin-top:-360px;
+  margin-left: -480px;
+  margin-top:-345px;
 }
 #element {
   display: none;
@@ -162,6 +470,39 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 #element:target {
   display: block;
 }
+
+@media (max-width: 1699px) {
+    #element {
+      position: fixed;
+  margin-left: 350px;
+  margin-top:-300px;
+  }
+
+}
+
+@media (max-width: 820px) {
+    #element {
+      position: fixed;
+  margin-left: -100px;
+  margin-top:-400px;
+  }
+
+}
+
+@media (max-width: 820px) {
+  #arrow {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+}
+
+
 
  .tooltip {
   position: relative;
@@ -197,7 +538,7 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
   .modal-content {
     margin-left: 400px;
 
-    margin-top: 300px;
+    margin-top: 300px;&
     width: 500px;
   }
 }
@@ -234,16 +575,15 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 </header>
 <div class="test">
 
-<th>  <H3>Total TVA </H3>
+<th>  <H3>Total avec TVA </H3>
 <div id="totalTVA"></div> </th>
 
 </br>
-    <th><H3>Total</H3>
+    <th><H3>Total hors TVA</H3>
 <div id="totalCost"></div> </th>
 </div>
 
 <div class="logg">
-<p> lal</p>
 </div>
 
 
@@ -252,13 +592,15 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
 
 
 <section id="LSEO">
-
+<video autoplay muted loop id="LSEO-video">
+    <source src="Video.mp4" type="video/mp4">
+  </video>
 
 <table>
 
   <thead>
     <tr>
-      <th>Licence SEO</th>
+      <th> <h5> Licence SEO </h5> </th>
       <th> 
 
 
@@ -286,9 +628,9 @@ box-shadow: 0px 0px 45px 6px rgba(12,103,136,0.87);
             if (container) {
                 const checkbox = container.querySelector('.toggle-checkbox')
                 if (checkbox.checked) {n  
-                    window.location.href = 'index.php'
-                } else {
                     window.location.href = 'WFrom.php'
+                } else {
+                    window.location.href = 'index.php'
                 }
             }
         })
@@ -332,9 +674,7 @@ arrow.addEventListener("click", function() {
 
   <tr>
       <td>
-
       <div>
-
       <h4>
     <input type="checkbox" id="checkbox1" class="save-checkbox" value="Robots, sitmaps, flux Rss" />
     <label for="checkbox1">Robots, sitmaps, flux Rss</label>
@@ -452,7 +792,7 @@ arrow.addEventListener("click", function() {
     <p>Voici le contenu du modal 8.</p>
   </div>
 </div>    </h4>
-
+</br>
 
 
 </div>
@@ -473,13 +813,15 @@ arrow.addEventListener("click", function() {
 
 
 <section id="LS">
-
+<video autoplay muted loop id="LS-video">&
+    <source src="Video2.mp4" type="video/mp4">
+  </video>
 
 <table>
 
   <thead>
     <tr>
-      <th>Licence Sécurité </th>
+      <th> <h5> Licence Sécurité </h5></th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
@@ -624,14 +966,16 @@ arrow.addEventListener("click", function() {
 
 
 <section id="Heb">
-
+<video autoplay muted loop id="Heb-video">
+    <source src="Video.mp4" type="video/mp4">
+  </video>
 
 
 <table>
 
   <thead>
     <tr>
-      <th>Hébergement Sur le serveur dédié</th>
+      <th><h5> Hébergement Sur le serveur dédié</h5></th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
@@ -744,19 +1088,20 @@ arrow.addEventListener("click", function() {
 
 
 <section id="MJS">
-
+<video autoplay muted loop id="Heb-video">
+    <source src="Video2.mp4" type="video/mp4">
+  </video>
 
 
 <table>
 
   <thead>
     <tr>
-      <th>Module sur mesure Mise à jour</th>
+      <th><h5>Module sur mesure Mise à jour </h5></th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
     <th> <p> L3 </p> </th>
-
     
 
   </th>
@@ -772,20 +1117,22 @@ arrow.addEventListener("click", function() {
     <th> <p>/</p></th>
     <th><input type="radio" name="MJS" value="15">15€</th>
 <th><input type="radio" name="MJS" value="25">25€</th>
-</td>
 
+</td>
 
 </table>
     </thead>
 </section>
 
 <section id="Intrg">
-
+<video autoplay muted loop id="Heb-video">
+    <source src="Video.mp4" type="video/mp4">
+  </video>
 <table>
 
   <thead>
     <tr>
-      <th>Integarteur / réparation respective </th>
+      <th><h5> Integarteur / réparation respective </h5> </th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
@@ -870,12 +1217,14 @@ arrow.addEventListener("click", function() {
 
 
 <section id="Webmaster">
-
+<video autoplay muted loop id="Heb-video">
+    <source src="Video2.mp4" type="video/mp4">
+  </video>
 <table>
 
   <thead>
     <tr>
-      <th>Webmaster / Assistance </th>
+      <th><h5> Webmaster / Assistance</h5> </th>
       <th> 
     <th> <p> L1 </p> </th>
     <th> <p> L2 </p> </th>
@@ -986,19 +1335,15 @@ arrow.addEventListener("click", function() {
 <br/>
 <br />
 
-    <td><td><input type="radio" name="WebAss" class="save-radio" value="25">25€</td>
+    <td>
+      <td><input type="radio" name="WebAss" class="save-radio" value="25">25€</td>
 <td><input type="radio" name="WebAss"class="save-radio" value="25">25€</td>
 <td><input type="radio" name="WebAss" class="save-radio" value="30">30€ </td>
 </td>
 
-    <tr>
-      <th>Temps </th>
-      <th> 
-   <div>
+    <tr> 
 
-     
-    <td>
-   <td> <div class="btn-group" data-toggle="buttons">
+      <th> temps <td> <div class="btn-group" data-toggle="buttons">
             <input type="radio" name="temps " checked value="25"> 30min
             </div>
         </td>
@@ -1008,7 +1353,13 @@ arrow.addEventListener("click", function() {
             <input type="radio" name="temps " checked value="10"> 1h
             </div>
         </td>
-    </div>
+    </div> </th>
+      <th> 
+   <div>
+
+     
+    <td>
+   
 </td>
 
 
@@ -1119,162 +1470,11 @@ checkboxes.forEach(function(checkbox) {
 </script> 
 </section>
 
-
-
-
-
-</div>
-</body>
-
-
-
-
-</th> 
- </a>
-</p> 
-</tr>
-</div>
-</thead>
-</form>
-</p>
-      </tr>
-    </tbody>
- </table>
-
-<!-- <script type="text/javascript">
-  
-
-  function toggleCheckbox(checkboxxId, textId) {
- document.getElementById(checkboxxId).addEventListener('change', function() {
-    var text = document.getElementById(textId);
-    
-    if (this.checked) {
-      text.style.display = 'block';
-    } else {
-      text.style.display = 'none';
-    }
- });
-}
-
-var checkboxes = [ 
- { id: 'checkbox', textId: 'text' },
- { id: 'checkbox2', textId: 'text2' },
- { id: 'checkbox3', textId: 'text3' },
- { id: 'checkbox4', textId: 'text4' },
- { id: 'checkbox5', textId: 'text5' },
- { id: 'checkbox6', textId: 'text6' },
- { id: 'checkbox7', textId: 'text7' },
- { id: 'checkbox8', textId: 'text8' },
- { id: 'checkbox9', textId: 'text9' },
- { id: 'checkbox10', textId: 'text10' },
- { id: 'checkbox11', textId: 'text11' },
- { id: 'checkbox12', textId: 'text12' },
- { id: 'checkbox13', textId: 'text13' },
- { id: 'checkbox14', textId: 'text14' },
- { id: 'checkbox15', textId: 'text15' },
- { id: 'checkbox16', textId: 'text16' },
- { id: 'checkbox17', textId: 'text17' },
- { id: 'checkbox18', textId: 'text18' },
- { id: 'checkbox19', textId: 'text19' },
- { id: 'checkbox20', textId: 'text20' },
- { id: 'checkbox21', textId: 'text21' },
- { id: 'checkbox22', textId: 'text22' },
- { id: 'checkbox23', textId: 'text23' },
- { id: 'checkbox24', textId: 'text24' },
- { id: 'checkbox25', textId: 'text25' },
- { id: 'checkbox26', textId: 'text26' },
- { id: 'checkbox27', textId: 'text27' },
- { id: 'checkbox28', textId: 'text28' },
- { id: 'checkbox29', textId: 'text29' },
- { id: 'checkbox30', textId: 'text30' },
- { id: 'checkbox31', textId: 'text31' },
- { id: 'checkbox32', textId: 'text32' },
- { id: 'checkbox33', textId: 'text33' },
- { id: 'checkbox34', textId: 'text34' },
- { id: 'checkbox35', textId: 'text35' },
-
-
-
-];
-
-for (var i = 0; i < checkboxes.length; i++) {
- toggleCheckbox(checkboxes[i].id, checkboxes[i].textId);
-} -->
-
-<!-- // document.getElementById('checkbox').addEventListener('change', function() {
-//  var text = document.getElementById('text');
- 
-//  if (this.checked) {
-//     text.style.display = 'block';
-//  } else {
-//     text.style.display = 'none';
-//  }
-// });
-
-// document.getElementById('checkbox2').addEventListener('change', function() {
-//  var text = document.getElementById('text2');
- 
-//  if (this.checked) {
-//     text.style.display = 'block';
-//  } else {
-//     text.style.display = 'none';
-//  }
-// });
-
-</script> -->
-
-<div id="totalCost"></div>
-
-
-
-
-<script>
-function updateTotalCost() {
-    let totalCost = Array.from(document.querySelectorAll('input[name="LSEO"]:checked, input[name="LS"]:checked, input[name="Intr"]:checked, input[name="WebAss"]:checked, input[name="MJS"]:checked, input[name="Heb"]:checked')).reduce(function(sum, el) 
-    
-    {
-        return sum + parseInt(el.value);
-    }, 0);
-
-    document.getElementById('totalCost').textContent = totalCost + '€';
-}
-
-document.querySelectorAll('input[name="LSEO"], input[name="LS"],  input[name="Intr"], input[name="WebAss"], input[name="MJS"], input[name="Heb"]').forEach(function(el) {
-    el.addEventListener('click', function() {
-        updateTotalCost();
-    });
-});
-
-</script>
-
-
-
-<div id="totalTVA"></div>
-
-<script>
-function updateTotalTVA() {
-    let totalTVA = Array.from(document.querySelectorAll('input[name="LSEO"]:checked, input[name="LS"]:checked, input[name="Intr"]:checked, input[name="WebAss"]:checked, input[name="MJS"]:checked, input[name="Heb"]:checked')).reduce(function(sum, el) 
-    
-    {
-        return sum + parseInt(el.value);
-    }, 0);
-
-    let totalTVAWithTax = totalTVA * 1.20;
-    document.getElementById('totalTVA').textContent = totalTVAWithTax + '€';
-}
-
-document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Intr"], input[name="WebAss"], input[name="MJS"], input[name="Heb"]').forEach(function(el) {
-    el.addEventListener('click', function() {
-        updateTotalTVA();
-    });
-});
-
-// calculer et afficher le coût total et le coût total avec la TVA
-</script>
-
-
-
 <section id="choix">
+<video autoplay muted loop id="Heb-video">
+    <source src="Video.mp4" type="video/mp4">
+  </video>
+
   <!-- afficher selection -->
 <table>
   <thead>
@@ -1385,6 +1585,164 @@ document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Int
     });
   });
 </script>
+</section>
+
+<div id="totalCost"></div>
+
+
+
+
+<script>
+function updateTotalCost() {
+    let totalCost = Array.from(document.querySelectorAll('input[name="LSEO"]:checked, input[name="LS"]:checked, input[name="Intr"]:checked, input[name="WebAss"]:checked, input[name="MJS"]:checked, input[name="Heb"]:checked')).reduce(function(sum, el) 
+    
+    {
+        return sum + parseInt(el.value);
+    }, 0);
+
+    document.getElementById('totalCost').textContent = totalCost + '€';
+}
+
+document.querySelectorAll('input[name="LSEO"], input[name="LS"],  input[name="Intr"], input[name="WebAss"], input[name="MJS"], input[name="Heb"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+        updateTotalCost();
+    });
+});
+
+</script>
+
+
+
+<div id="totalTVA"></div>
+
+<script>
+function updateTotalTVA() {
+    let totalTVA = Array.from(document.querySelectorAll('input[name="LSEO"]:checked, input[name="LS"]:checked, input[name="Intr"]:checked, input[name="WebAss"]:checked, input[name="MJS"]:checked, input[name="Heb"]:checked')).reduce(function(sum, el) 
+    
+    {
+        return sum + parseInt(el.value);
+    }, 0);
+
+    let totalTVAWithTax = totalTVA * 1.20;
+    document.getElementById('totalTVA').textContent = totalTVAWithTax + '€';
+}
+
+document.querySelectorAll('input[name="LSEO"], input[name="LS"], input[name="Intr"], input[name="WebAss"], input[name="MJS"], input[name="Heb"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+        updateTotalTVA();
+    });
+});
+
+// calculer et afficher le coût total et le coût total avec la TVA
+</script>
+
+
+
+
+</div>
+</body>
+
+
+
+
+</th> 
+ </a>
+</p> 
+</tr>
+</div>
+</thead>
+</form>
+</p>
+      </tr>
+    </tbody>
+ </table>
+
+<!-- <script type="text/javascript">
+  
+
+  function toggleCheckbox(checkboxxId, textId) {
+ document.getElementById(checkboxxId).addEventListener('change', function() {
+    var text = document.getElementById(textId);
+    
+    if (this.checked) {
+      text.style.display = 'block';
+    } else {
+      text.style.display = 'none';
+    }
+ });
+}
+
+var checkboxes = [ 
+ { id: 'checkbox', textId: 'text' },
+ { id: 'checkbox2', textId: 'text2' },
+ { id: 'checkbox3', textId: 'text3' },
+ { id: 'checkbox4', textId: 'text4' },
+ { id: 'checkbox5', textId: 'text5' },
+ { id: 'checkbox6', textId: 'text6' },
+ { id: 'checkbox7', textId: 'text7' },
+ { id: 'checkbox8', textId: 'text8' },
+ { id: 'checkbox9', textId: 'text9' },
+ { id: 'checkbox10', textId: 'text10' },
+ { id: 'checkbox11', textId: 'text11' },
+ { id: 'checkbox12', textId: 'text12' },
+ { id: 'checkbox13', textId: 'text13' },
+ { id: 'checkbox14', textId: 'text14' },
+ { id: 'checkbox15', textId: 'text15' },
+ { id: 'checkbox16', textId: 'text16' },
+ { id: 'checkbox17', textId: 'text17' },
+ { id: 'checkbox18', textId: 'text18' },
+ { id: 'checkbox19', textId: 'text19' },
+ { id: 'checkbox20', textId: 'text20' },
+ { id: 'checkbox21', textId: 'text21' },
+ { id: 'checkbox22', textId: 'text22' },
+ { id: 'checkbox23', textId: 'text23' },
+ { id: 'checkbox24', textId: 'text24' },
+ { id: 'checkbox25', textId: 'text25' },
+ { id: 'checkbox26', textId: 'text26' },
+ { id: 'checkbox27', textId: 'text27' },
+ { id: 'checkbox28', textId: 'text28' },
+ { id: 'checkbox29', textId: 'text29' },
+ { id: 'checkbox30', textId: 'text30' },
+ { id: 'checkbox31', textId: 'text31' },
+ { id: 'checkbox32', textId: 'text32' },
+ { id: 'checkbox33', textId: 'text33' },
+ { id: 'checkbox34', textId: 'text34' },
+ { id: 'checkbox35', textId: 'text35' },
+
+
+
+];
+
+for (var i = 0; i < checkboxes.length; i++) {
+ toggleCheckbox(checkboxes[i].id, checkboxes[i].textId);
+} -->
+
+<!-- // document.getElementById('checkbox').addEventListener('change', function() {
+//  var text = document.getElementById('text');
+ 
+//  if (this.checked) {
+//     text.style.display = 'block';
+//  } else {
+//     text.style.display = 'none';
+//  }
+// });
+
+// document.getElementById('checkbox2').addEventListener('change', function() {
+//  var text = document.getElementById('text2');
+ 
+//  if (this.checked) {
+//     text.style.display = 'block';
+//  } else {
+//     text.style.display = 'none';
+//  }
+// });
+
+</script> -->
+
+
+
+
+
 
 <!-- <?php
 
