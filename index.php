@@ -125,7 +125,7 @@ margin-right:270px;
   }
   
   .toggle-label {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 58px;
@@ -139,7 +139,7 @@ margin-right:270px;
   .toggle-text {
     position: absolute;
     top: 2px;
-    left: 2+1px;
+    left: 21px;
     font-size: 14px;
     color: #fff;
     user-select: none;
@@ -147,8 +147,7 @@ margin-right:270px;
     
 
   }
-  
-  
+
   .toggle-container {
     position: relative;
     display: inline-block;
@@ -156,33 +155,9 @@ margin-right:270px;
     height: 20px;
     left:-650px;
     top:-157px;
+    
   }
-  
-  .toggle-checkbox {
-    display: none;
-  }
-  
-  .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 58px;
-    height: 26px;
-    border-radius: 26px;
-    background-color:#2196F3;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 
-  }
-  
-  .toggle-text {
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    font-size: 14px;
-    color: #fff;
-    user-select: none;
-  }
   
   .toggle-checkbox:checked + .toggle-label {
     background-color: #ccc;
@@ -211,7 +186,7 @@ margin-right:270px;
   left: 0;
   top: 120px;
   transform: translateY(-50%);
-  background-color: #0c6688;
+  background-color: transparent;
   padding: 10px;
   cursor: pointer;
 }
@@ -228,6 +203,43 @@ margin-right:270px;
   display: block;
 }
 
+@media (max-width: 1669px) {
+    
+  #element {
+    position: fixed;
+         margin-right: -100px;
+         margin-left:20px;
+    }
+    }
+
+    @media (max-width: 820px) {
+    
+    #element {
+      position: fixed;
+           margin-right: -570px;
+           margin-top:-625px;
+
+      }
+      } 
+
+      @media (max-width: 768px) {
+    
+    #element {
+      position: fixed;
+           margin-right: -620px;
+           margin-top:-485px;
+
+      }
+      } 
+      @media (max-width:377px) {
+    
+    #element {
+      position: fixed;
+  margin-left: -700px;
+  margin-top:-600px;
+      }
+      } 
+      
 </style>
    
     </head>
@@ -305,4 +317,5 @@ arrow.addEventListener("click", function() {
 </html>
 
 
+ 
  
